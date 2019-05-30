@@ -49,10 +49,12 @@ def check_env():
 
 # copy overlays to python package
 def copy_overlays():
-    src_ol_dir = os.path.join(repo_board_folder, 'bitstream')
-    dst_ol_dir = os.path.join('helloworld', 'bitstream')
-    copy_tree(src_ol_dir, dst_ol_dir)
-    hw_data_files.extend([os.path.join("..", dst_ol_dir, f) for f in os.listdir(dst_ol_dir)])
+
+    for f in ['bitstream', 'notebooks']:
+        src_ol_dir = os.path.join(repo_board_folder, f)
+        dst_ol_dir = os.path.join('helloworld', f)
+        copy_tree(src_ol_dir, dst_ol_dir)
+        hw_data_files.extend([os.path.join("..", dst_ol_dir, f) for f in os.listdir(dst_ol_dir)])
 
 
 # copy notebooks to jupyter home
