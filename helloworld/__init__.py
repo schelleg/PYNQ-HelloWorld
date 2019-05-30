@@ -27,19 +27,20 @@
 #   OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF 
 #   ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-# global variables
-board = os.environ['BOARD']
+from shutil import copytree, rmtree
+import os
+
+
 
 board_notebooks_dir = os.environ['PYNQ_JUPYTER_NOTEBOOKS']
-hw_data_files = []
 
 
-# copy overlays to python package
 def install_notebooks():
-    src_nb_dir = os.path.join('helloworld', 'notebooks')
+    path = os.path.dirname(__file__)
+    src_nb_dir = os.path.join(path, 'notebooks')
     dst_nb_dir = os.path.join(board_notebooks_dir, 'helloworld')
     if os.path.exists(dst_nb_dir):
-        shutil.rmtree(dst_nb_dir)
-    copy_tree(src_nb_dir, dst_nb_dir)
+        rmtree(dst_nb_dir)
+    copytree(src_nb_dir, dst_nb_dir)
 
 
