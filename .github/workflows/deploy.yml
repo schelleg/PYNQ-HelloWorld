@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
       - '*'
@@ -24,10 +24,10 @@ jobs:
       - name: Build the JupyterLite site
         run: |
           mkdir content
-          cp README.md content
-          cp notebooks/edge/*.ipynb content
-          wget https://www.xilinx.com/bin/public/openDownload?filename=pynqhelloworld.resizer.pynqz2.bit -O content/resizer.bit
-          wget https://www.xilinx.com/bin/public/openDownload?filename=pynqhelloworld.resizer.pynqz2.hwh -O content/resizer.hwh
+          mkdir content/notebooks
+          cp README.md content 
+          cp resizer_notebooks.png content
+          cp -r pynq_helloworld/notebooks/edge/* content/notebooks
           jupyter lite build --contents content --output-dir dist
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
@@ -36,7 +36,7 @@ jobs:
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master'
     permissions:
       pages: write
       id-token: write
