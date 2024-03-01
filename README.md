@@ -1,5 +1,7 @@
 ## PYNQ-Helloworld
 
+[![lite-badge](https://jupyterlite.rtfd.io/en/latest/_static/badge.svg)](https://schelleg.github.io/PYNQ-HelloWorld/lab/index.html)
+
 This repository contains a "Hello World" introduction application to the Xilinx PYNQ framework. 
 
 The design illustrates how to run a resizer IP to resize an image on the FPGA. There are two notebooks that illustrate the resize operation. One notebook shows the image resizing done purely in software using Python Image Library. The second notebook shows the resize operation being performed in the programmable logic using a resizer IP from the  Xilinx xfopencv library. 
