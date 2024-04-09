@@ -178,3 +178,6 @@ Werkzeug
 # widgetsnbextension
 wurlitzer
 pynq
+
+# Board connectivity
+sonora
