@@ -1,11 +1,19 @@
 # Core modules (mandatory)
-jupyterlite-core==0.2.3
-jupyterlab~=4.0.11
-notebook~=7.0.7
-
+# jupyterlite-core==0.2.3
+# jupyterlab~=4.0.11
+# notebook~=7.0.7
 
 # Python kernel (optional)
-jupyterlite-pyodide-kernel==0.2.3
+# jupyterlite-pyodide-kernel==0.2.3
+
+
+# Core modules (mandatory)
+jupyterlite-core==>=0.3,<0.4
+jupyterlab~=>=4.1.1,<4.2
+notebook~=>=7.1.0,<7.2
+jupyterlite-pyodide-kernel==0.3.*
+
+
 
 # JavaScript kernel (optional)
 # (remove for PYNQ) jupyterlite-javascript-kernel==0.2.3
@@ -49,135 +57,135 @@ plotly>=5,<6
 bqplot
 
 # GRPC packages
-grpcio 
-grpcio-tools
+# grpcio 
+# grpcio-tools
 
 
 # PYNQ packages 
-alabaster
-anyio
-argon2-cffi
-argon2-cffi-bindings
-asttokens
-async-generator
-backcall
-bleach
-CppHeaderParser
-Cython
-dash
-dash-bootstrap-components
-dash-core-components
-dash-html-components
-dash-renderer
-dash-table
-debugpy
-deepdiff
-deltasigma
-docutils
-entrypoints
-executing
-fastjsonschema
-Flask
-Flask-Compress
-gTTS
-imagesize
-imutils
-ipykernel
-ipython
-ipython-genutils
-ipywidgets
-itsdangerous
-jedi
-json5
-jsonschema
-jupyter
-jupyter-client
-jupyter-console
-jupyter-contrib-core
-jupyter-contrib-nbextensions
-jupyter-core
-jupyter-highlight-selected-word
-jupyter-latex-envs
-jupyter-nbextensions-configurator
-jupyter-server
-jupyterlab
-jupyterlab-pygments
-jupyterlab-server
-jupyterlab-widgets
-jupyterplot
-lrcurve
-MarkupSafe
-matplotlib-inline
-mistune
-nbclassic
-nbclient
-nbconvert
-nbformat
-nbsphinx
-nbwavedrom
-nest-asyncio
-notebook
-notebook-shim
-ordered-set
-pandocfilters
-parsec
-parso
-patsy
-pbr
-pexpect
-pickleshare
-plotly
-prometheus-client
-prompt-toolkit
-ptyprocess
-pure-eval
-# (build error - fatal error: portaudio.h: No such file or directory) PyAudio
-pybind11
-pycairo
-pycparser
-pycurl
-pydantic
-pyeda
-pyrsistent
-python-dateutil
-pyzmq
-qtconsole
-QtPy
-rise
-roman
-Send2Trash
-setproctitle
-simple-term-menu
-simplegeneric
-sniffio
-snowballstemmer
-SpeechRecognition
-Sphinx
-sphinx-rtd-theme
-sphinxcontrib-applehelp
-sphinxcontrib-devhelp
-sphinxcontrib-htmlhelp
-sphinxcontrib-jsmath
-sphinxcontrib-qthelp
-sphinxcontrib-serializinghtml
-stack-data
-tenacity
-terminado
-testpath
-testresources
-tinycss2
-tqdm
-traitlets
-typing_extensions
-voila
-voila-gridstack
-wcwidth
-websocket-client
-websockets
-Werkzeug
-# widgetsnbextension
-wurlitzer
-pynq
+# alabaster
+# anyio
+# argon2-cffi
+# argon2-cffi-bindings
+# asttokens
+# async-generator
+# backcall
+# bleach
+# CppHeaderParser
+# Cython
+# dash
+# dash-bootstrap-components
+# dash-core-components
+# dash-html-components
+# dash-renderer
+# dash-table
+# debugpy
+# deepdiff
+# deltasigma
+# docutils
+# entrypoints
+# executing
+# fastjsonschema
+# Flask
+# Flask-Compress
+# gTTS
+# imagesize
+# imutils
+# ipykernel
+# ipython
+# ipython-genutils
+# ipywidgets
+# itsdangerous
+# jedi
+# json5
+# jsonschema
+# jupyter
+# jupyter-client
+# jupyter-console
+# jupyter-contrib-core
+# jupyter-contrib-nbextensions
+# jupyter-core
+# jupyter-highlight-selected-word
+# jupyter-latex-envs
+# jupyter-nbextensions-configurator
+# jupyter-server
+# jupyterlab
+# jupyterlab-pygments
+# jupyterlab-server
+# jupyterlab-widgets
+# jupyterplot
+# lrcurve
+# MarkupSafe
+# matplotlib-inline
+# mistune
+# nbclassic
+# nbclient
+# nbconvert
+# nbformat
+# nbsphinx
+# nbwavedrom
+# nest-asyncio
+# notebook
+# notebook-shim
+# ordered-set
+# pandocfilters
+# parsec
+# parso
+# patsy
+# pbr
+# pexpect
+# pickleshare
+# plotly
+# prometheus-client
+# prompt-toolkit
+# ptyprocess
+# pure-eval
+# # (build error - fatal error: portaudio.h: No such file or directory) PyAudio
+# pybind11
+# pycairo
+# pycparser
+# pycurl
+# pydantic
+# pyeda
+# pyrsistent
+# python-dateutil
+# pyzmq
+# qtconsole
+# QtPy
+# rise
+# roman
+# Send2Trash
+# setproctitle
+# simple-term-menu
+# simplegeneric
+# sniffio
+# snowballstemmer
+# SpeechRecognition
+# Sphinx
+# sphinx-rtd-theme
+# sphinxcontrib-applehelp
+# sphinxcontrib-devhelp
+# sphinxcontrib-htmlhelp
+# sphinxcontrib-jsmath
+# sphinxcontrib-qthelp
+# sphinxcontrib-serializinghtml
+# stack-data
+# tenacity
+# terminado
+# testpath
+# testresources
+# tinycss2
+# tqdm
+# traitlets
+# typing_extensions
+# voila
+# voila-gridstack
+# wcwidth
+# websocket-client
+# websockets
+# Werkzeug
+# # widgetsnbextension
+# wurlitzer
+# pynq
 
 # Board connectivity
 # sonora
