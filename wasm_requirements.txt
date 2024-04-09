@@ -180,4 +180,4 @@ wurlitzer
 pynq
 
 # Board connectivity
-sonora
+# sonora
