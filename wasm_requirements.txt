@@ -1,64 +1,48 @@
 # Core modules (mandatory)
-# jupyterlite-core==0.2.3
-# jupyterlab~=4.0.11
-# notebook~=7.0.7
+jupyterlite-core==0.3.0
+jupyterlab~=4.1.6
+notebook~=7.1.2
+
 
 # Python kernel (optional)
-# jupyterlite-pyodide-kernel==0.2.3
-
-
-# Core modules (mandatory)
-jupyterlite-core>=0.3,<0.4
-jupyterlab>=4.1.1,<4.2
-notebook>=7.1.0,<7.2
-jupyterlite-pyodide-kernel==0.3.*
-
-
+jupyterlite-pyodide-kernel==0.3.1
 
 # JavaScript kernel (optional)
-# (remove for PYNQ) jupyterlite-javascript-kernel==0.2.3
+jupyterlite-javascript-kernel==0.3.0
 
 # Language support (optional)
-# (remove for PYNQ) jupyterlab-language-pack-fr-FR
-# (remove for PYNQ) jupyterlab-language-pack-zh-CN
+jupyterlab-language-pack-fr-FR
+jupyterlab-language-pack-zh-CN
 
-# SQLite kernel (optional)
-# (remove for PYNQ) jupyterlite-xeus-sqlite==0.2.1
 # P5 kernel (optional)
-# (remove for PYNQ) jupyterlite-p5-kernel==0.1.0
-# Lua kernel (optional)
-# (remove for PYNQ) jupyterlite-xeus-lua==0.3.1
+jupyterlite-p5-kernel==0.1.0
 
 # JupyterLab: Fasta file renderer (optional)
-# (remove for PYNQ) jupyterlab-fasta>=3.3.0,<4
+jupyterlab-fasta>=3.3.0,<4
 # JupyterLab: Geojson file renderer (optional)
-# (remove for PYNQ) jupyterlab-geojson>=3.4.0,<4
+jupyterlab-geojson>=3.4.0,<4
 # JupyterLab: guided tour (optional)
 # TODO: re-enable after https://github.com/jupyterlab-contrib/jupyterlab-tour/issues/82
 # jupyterlab-tour
 # JupyterLab: dark theme
-# jupyterlab-night
-# # JupyterLab: Miami nights theme (optional)
-# jupyterlab_miami_nights
+jupyterlab-night
+# JupyterLab: Miami nights theme (optional)
+jupyterlab_miami_nights
 
-# # Python: ipywidget library for Jupyter notebooks (optional)
-# ipywidgets>=8.1.1,<9
-# # Python: ipyevents library for Jupyter notebooks (optional)
-# ipyevents>=2.0.1
-# # Python: interative Matplotlib library for Jupyter notebooks (optional)
-# ipympl>=0.8.2
-# # Python: ipycanvas library for Jupyter notebooks (optional)
-# ipycanvas>=0.9.1
-# # Python: ipyleaflet library for Jupyter notebooks (optional)
-# ipyleaflet
+# Python: ipywidget library for Jupyter notebooks (optional)
+ipywidgets>=8.1.1,<9
+# Python: ipyevents library for Jupyter notebooks (optional)
+ipyevents>=2.0.1
+# Python: interative Matplotlib library for Jupyter notebooks (optional)
+ipympl>=0.8.2
+# Python: ipycanvas library for Jupyter notebooks (optional)
+ipycanvas>=0.9.1
+# Python: ipyleaflet library for Jupyter notebooks (optional)
+ipyleaflet
 
-# # Python: plotting libraries (optional)
-# plotly>=5,<6
-# bqplot
-
-# GRPC packages
-# grpcio 
-# grpcio-tools
+# Python: plotting libraries (optional)
+plotly>=5,<6
+bqplot
 
 
 # PYNQ packages 
