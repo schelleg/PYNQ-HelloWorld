@@ -181,3 +181,6 @@ pynq
 
 # Board connectivity
 # sonora
+protobuf
+urllib3
+
